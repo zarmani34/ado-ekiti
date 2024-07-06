@@ -167,10 +167,19 @@
 
     <section id="contact" class="contact">
       <h2 class="tittle">Contact Us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
-        <textarea name="message" placeholder="Your Message"></textarea>
+      <form id="form">
+        <div class="name">
+            <input type="text" name="name" placeholder="Your Name" id="name" />
+            <p class="error name-mssg"></p>
+        </div>
+        <div class="mail">
+            <input type="email" name="email" placeholder="Your Email" id="email" />
+            <p class="error mail-mssg"></p>
+        </div>
+        <div class="messsage">
+            <textarea name="message" placeholder="Your Message" id="message"></textarea>
+            <p class="error message-mssg"></p>
+        </div>
         <button class="btn" type="submit">Send Message</button>
       </form>
     </section>
